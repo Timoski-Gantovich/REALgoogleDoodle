@@ -6,20 +6,39 @@
 */
 
 * {
-    outline: 1px dotted black;
+  outline: 1px dotted black;
 }
 
 /* Doodle Stage */
 #stage {
-  background: #ccc;
+  background: rgb(0, 0, 31);
   height: 300px;
   width: 600px;
 }
+svg {
+  /* Googl */
 
-#heart1 {
-  fill: red;
-}
+  position: absolute;
+  width: 927px;
+  height: 273px;
 
-#heart2 {
-  fill: green;
+  font-family: Ranger;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 102px;
+  line-height: 102px;
+
+  color: #d9b600;
+
+  transform: rotate(-180deg);
+
+  /* X-Wing_Top 1 */
+
+  position: absolute;
+  width: 927px;
+  height: 143px;
+
+  background: url(X-Wing_Top.png);
+  transform: rotate(180deg);
+  transform-origin: 42% 70%;
 }
