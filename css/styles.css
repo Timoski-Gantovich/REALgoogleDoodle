@@ -5,16 +5,18 @@
   * Outline Elements
 */
 
-* {
-  outline: 1px dotted black;
-}
-
 /* Doodle Stage */
+img {
+  position: relative;
+  width: 50px;
+  left: 20px;
+}
 #stage {
-  background: rgb(0, 0, 31);
+  background: rgb(91, 97, 134);
   height: 300px;
   width: 600px;
 }
+
 svg {
   /* Googl */
 
@@ -34,11 +36,21 @@ svg {
 
   /* X-Wing_Top 1 */
 
-  position: absolute;
-  width: 927px;
-  height: 143px;
+  position: relative;
+  width: 300px;
+  height: 75px;
+  left: 150px;
 
   background: url(X-Wing_Top.png);
   transform: rotate(180deg);
   transform-origin: 42% 70%;
+}
+svg:hover {
+  transform: rotate(360deg);
+  transition: transform 5s;
+}
+img:hover {
+  transform: translate(150px);
+
+  transition: transform 5s;
 }
