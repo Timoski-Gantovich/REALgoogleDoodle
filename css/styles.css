@@ -9,48 +9,60 @@
 img {
   position: relative;
   width: 50px;
-  left: 20px;
+  left: 10px;
+  top: 190px;
 }
+
 #stage {
-  background: rgb(91, 97, 134);
+  background: rgb(7, 12, 44);
   height: 300px;
   width: 600px;
+  top: 1px;
 }
 
 svg {
   /* Googl */
 
   position: absolute;
-  width: 927px;
-  height: 273px;
+  width: 100px;
+  height: 102px;
 
   font-family: Ranger;
   font-style: normal;
   font-weight: normal;
   font-size: 102px;
   line-height: 102px;
+  /* identical to box height */
 
-  color: #d9b600;
-
-  transform: rotate(-180deg);
+  color: #faff00;
 
   /* X-Wing_Top 1 */
 
   position: relative;
-  width: 300px;
-  height: 75px;
-  left: 150px;
+  width: 200px;
+  height: 220px;
+  left: 125px;
+  top: 40px;
+  rotate: (360deg);
 
   background: url(X-Wing_Top.png);
-  transform: rotate(180deg);
-  transform-origin: 42% 70%;
+
+  /* Ellipse 1 */
+
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  left: 150px;
+
+  background: #c74800;
+}
+
+img:hover {
+  transform: translate(50px);
+  transition-duration: 5s;
 }
 svg:hover {
-  transform: rotate(360deg);
-  transition: transform 5s;
-}
-img:hover {
-  transform: translate(150px);
-
+  transform: rotate(180deg);
   transition: transform 5s;
 }
