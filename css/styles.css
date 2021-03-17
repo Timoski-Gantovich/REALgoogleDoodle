@@ -10,7 +10,7 @@ img {
   position: relative;
   width: 50px;
   left: 10px;
-  top: 190px;
+  top: 340px;
 }
 
 #stage {
@@ -21,11 +21,17 @@ img {
 }
 
 svg {
-  /* Googl */
+  /* svg */
 
   position: absolute;
-  width: 100px;
-  height: 102px;
+  width: 419px;
+  height: 130px;
+
+  /* X-Wing_Top 1 */
+
+  background: url(X-Wing_Top.png);
+
+  /* Googl */
 
   font-family: Ranger;
   font-style: normal;
@@ -35,34 +41,10 @@ svg {
   /* identical to box height */
 
   color: #faff00;
-
-  /* X-Wing_Top 1 */
-
-  position: relative;
-  width: 200px;
-  height: 220px;
-  left: 125px;
-  top: 40px;
-  rotate: (360deg);
-
-  background: url(X-Wing_Top.png);
-
-  /* Ellipse 1 */
-
-  position: relative;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  left: 150px;
-
-  background: #c74800;
+  top: 100px;
+  left: 100px;
 }
-
 img:hover {
-  transform: translate(50px);
+  transform: translate(500px);
   transition-duration: 5s;
-}
-svg:hover {
-  transform: rotate(180deg);
-  transition: transform 5s;
 }
