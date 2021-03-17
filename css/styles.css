@@ -10,7 +10,7 @@ img {
   position: relative;
   width: 50px;
   left: 10px;
-  top: 340px;
+  top: 262px;
 }
 
 #stage {
@@ -23,7 +23,7 @@ img {
 svg {
   /* svg */
 
-  position: absolute;
+  position: relative;
   width: 419px;
   height: 130px;
 
@@ -41,10 +41,15 @@ svg {
   /* identical to box height */
 
   color: #faff00;
-  top: 100px;
-  left: 100px;
+  top: 80px;
+  left: 60px;
 }
+
 img:hover {
   transform: translate(500px);
   transition-duration: 5s;
+}
+svg:hover path {
+  transform: translate(500px);
+  transition: transform 5s;
 }
